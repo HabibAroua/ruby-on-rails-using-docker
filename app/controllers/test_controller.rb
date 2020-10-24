@@ -8,6 +8,6 @@ class TestController < ApplicationController
       @x = 'Habib'
   end
   
-  def login
+  def main
   end
 end

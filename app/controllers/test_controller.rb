@@ -1,13 +1,20 @@
 class TestController < ApplicationController
-  def index
-    @id = params['id']
+	
+	skip_before_action :verify_authenticity_token #it may you to make a post from view to Controller 
+	def index
+	  @id = params['id']
 		@page = params['page']
-  end
+	end
   
-  def welcome
-      @x = 'Habib'
-  end
+	def welcome
+	    @x = 'Habib'
+	end
   
-  def main
-  end
+	def main
+	
+	end
+  
+	def post
+		
+	end
 end

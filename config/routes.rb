@@ -3,4 +3,6 @@ Rails.application.routes.draw do
     #get 'test/welcome' to: 'TestController#welcome'
     get '/test/welcome'
     get '/' , to: 'test#main'
+    post 'test/post' , to: 'test#post'
+    
 end

@@ -15,6 +15,6 @@ class TestController < ApplicationController
 	end
   
 	def post
-		
+		 @x = params[:txt_search]
 	end
 end

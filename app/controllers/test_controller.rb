@@ -1,3 +1,5 @@
+require 'net/smtp'
+
 class TestController < ApplicationController
 	
 	skip_before_action :verify_authenticity_token #it may you to make a post from view to Controller 
@@ -16,5 +18,9 @@ class TestController < ApplicationController
   
 	def post
 		 @x = params[:txt_search]
+	end
+	
+	def sendEmail
+		
 	end
 end
